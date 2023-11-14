@@ -4,6 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>img tag</title>
+
+    <img
+      src="img-small.jpg"
+      srcset="img-small.jpg 300w img-medium.jpg 600w, img-large.jpg 1000w"
+      alt="A responsive image that changes size"
+      width="100%"
+    />
+
+    <!-- <img src="img-small.jpg" alt="" srcset="img-medium 600w, img-large 1000w" /> -->
+
+    <img
+      class="img"
+      width="100%"
+      src="https://via.placeholder.com/50"
+      srcset="
+        https://via.placeholder.com/200 200w,
+        https://via.placeholder.com/400 400w
+      "
+      sizes="(min-width: 768px) 200px"
+    />
+
+    <hr />
+
+    <img
+      class="img"
+      width="100%"
+      src="https://via.placeholder.com/50"
+      srcset="
+        https://via.placeholder.com/200,
+        https://via.placeholder.com/400,
+        https://via.placeholder.com/600,
+        https://via.placeholder.com/800,
+        https://via.placeholder.com/1000
+      "
+    />
   </head>
   <body></body>
 </html>
+
+<!-- sizes="(min-width: 768px) 200px, 100vw" -->
